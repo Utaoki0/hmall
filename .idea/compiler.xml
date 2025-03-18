@@ -7,18 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="item-service" />
         <module name="cart-service" />
+        <module name="trade-service" />
+        <module name="hm-common" />
+        <module name="item-service" />
         <module name="user-service" />
         <module name="hm-service" />
-        <module name="hm-common" />
         <module name="hm-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hm-gateway" target="11" />
       <module name="pay-service" target="11" />
-      <module name="trade-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
