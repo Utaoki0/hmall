@@ -35,7 +35,7 @@ public class ItemController {
 
     @ApiOperation("根据id批量查询商品")
     @GetMapping
-    public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids){
+    public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids) {
         return itemService.queryItemByIds(ids);
     }
 
@@ -54,7 +54,7 @@ public class ItemController {
 
     @ApiOperation("更新商品状态")
     @PutMapping("/status/{id}/{status}")
-    public void updateItemStatus(@PathVariable("id") Long id, @PathVariable("status") Integer status){
+    public void updateItemStatus(@PathVariable("id") Long id, @PathVariable("status") Integer status) {
         Item item = new Item();
         item.setId(id);
         item.setStatus(status);
@@ -78,7 +78,7 @@ public class ItemController {
 
     @ApiOperation("批量扣减库存")
     @PutMapping("/stock/deduct")
-    public void deductStock(@RequestBody List<OrderDetailDTO> items){
+    public void deductStock(@RequestBody List<OrderDetailDTO> items) {
         itemService.deductStock(items);
     }
 }
