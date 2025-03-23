@@ -54,7 +54,7 @@
 //            return response.setComplete();
 //        }
 //        //解析校验token
-//        //todo 传递用户信息
+//
 //        String userInfo = userId.toString();
 //        ServerWebExchange swe = exchange.mutate()
 //                .request(builder -> builder.header("user-info", userInfo))
