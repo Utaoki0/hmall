@@ -1,116 +1,116 @@
-17-08-26-032  INFO 21192 --- [main] com.heima.trade.TradeApplication         : Starting TradeApplication using Java 11 on LAPTOP-GUBBUCIV with PID 21192 (D:\Develop\code\Project\hmall project\hmall\trade-service\target\classes started by Lenovo in D:\Develop\code\Project\hmall project\hmall)
-17-08-26-038 DEBUG 21192 --- [main] com.heima.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-17-08-26-039  INFO 21192 --- [main] com.heima.trade.TradeApplication         : The following 1 profile is active: "local"
-17-08-26-796  INFO 21192 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=110a8d02-1cd1-362e-a4a4-9fd51db1214b
-17-08-27-056  INFO 21192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
-17-08-27-066  INFO 21192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-17-08-27-067  INFO 21192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-17-08-27-180  INFO 21192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-17-08-27-180  INFO 21192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1104 ms
-17-08-27-341  INFO 21192 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-17-08-29-940  INFO 21192 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-17-08-32-336  INFO 21192 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17-08-32-358  INFO 21192 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-17-08-34-213  INFO 21192 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17-08-34-353  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of bfed0caa-d6dd-49c7-9b9d-d05523254e76
-17-08-34-381  INFO 21192 --- [main] org.reflections.Reflections              : Reflections took 16 ms to scan 1 urls, producing 3 keys and 6 values 
-17-08-34-397  INFO 21192 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
-17-08-34-407  INFO 21192 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 3 keys and 10 values 
-17-08-34-409  WARN 21192 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-17-08-34-416  INFO 21192 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
-17-08-34-428  INFO 21192 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
-17-08-34-440  INFO 21192 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
-17-08-34-442  WARN 21192 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-17-08-34-442  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] RpcClient init label, labels = {module=naming, source=sdk}
-17-08-34-444  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-17-08-34-444  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-17-08-34-445  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-17-08-34-447  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Try to connect to server on start up, server: {serverIp = '192.168.10.101', server main port = 8848}
-17-08-37-091  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Success to connect to server [192.168.10.101:8848] on start up, connectionId = 1742288894505_192.168.10.1_64589
-17-08-37-093  INFO 21192 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Notify connected event to listeners.
-17-08-37-095  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-17-08-37-096  INFO 21192 --- [main] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$972/0x000000080070d840
-17-08-37-133  INFO 21192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
-17-08-37-141  INFO 21192 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 172.17.0.1:8084 register finished
-17-08-37-657  INFO 21192 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Receive server push request, request = NotifySubscriberRequest, requestId = 9
-17-08-37-660  INFO 21192 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Ack server push request, request = NotifySubscriberRequest, requestId = 9
-17-08-39-110  INFO 21192 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-17-08-39-111  INFO 21192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-17-08-39-114  INFO 21192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-17-08-39-127  INFO 21192 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-17-08-39-186  INFO 21192 --- [main] com.heima.trade.TradeApplication         : Started TradeApplication in 16.494 seconds (JVM running for 18.629)
-17-10-07-990  INFO 21192 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-17-10-07-991  INFO 21192 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-17-10-07-992  INFO 21192 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-17-10-21-599  INFO 21192 --- [http-nio-8084-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-17-10-21-847  INFO 21192 --- [http-nio-8084-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-17-10-22-505  INFO 21192 --- [nacos-grpc-client-executor-32] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Receive server push request, request = NotifySubscriberRequest, requestId = 10
-17-10-22-505  INFO 21192 --- [nacos-grpc-client-executor-32] com.alibaba.nacos.common.remote.client   : [bfed0caa-d6dd-49c7-9b9d-d05523254e76] Ack server push request, request = NotifySubscriberRequest, requestId = 10
-17-10-22-630 ERROR 21192 --- [http-nio-8084-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.hmall.common.exception.BadRequestException: 商品不存在] with root cause
+15-55-25-324  INFO 17880 --- [main] com.heima.trade.TradeApplication         : Starting TradeApplication using Java 11 on LAPTOP-GUBBUCIV with PID 17880 (D:\Develop\code\Project\hmall project\hmall\trade-service\target\classes started by Lenovo in D:\Develop\code\Project\hmall project\hmall)
+15-55-25-335 DEBUG 17880 --- [main] com.heima.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+15-55-25-337  INFO 17880 --- [main] com.heima.trade.TradeApplication         : The following 1 profile is active: "local"
+15-55-28-368  INFO 17880 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73980d38-a0bc-3c89-baa6-728a010feec7
+15-55-29-489  INFO 17880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+15-55-29-520  INFO 17880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15-55-29-521  INFO 17880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15-55-30-242  INFO 17880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15-55-30-244  INFO 17880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4742 ms
+15-55-31-046  INFO 17880 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+15-55-41-919  INFO 17880 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+15-55-46-851  INFO 17880 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15-55-51-424  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of f8d5f254-7905-4be7-8a27-48f09f26225a
+15-55-51-590  INFO 17880 --- [main] org.reflections.Reflections              : Reflections took 77 ms to scan 1 urls, producing 3 keys and 6 values 
+15-55-51-671  INFO 17880 --- [main] org.reflections.Reflections              : Reflections took 39 ms to scan 1 urls, producing 4 keys and 9 values 
+15-55-51-702  INFO 17880 --- [main] org.reflections.Reflections              : Reflections took 26 ms to scan 1 urls, producing 3 keys and 10 values 
+15-55-51-706  WARN 17880 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15-55-51-743  INFO 17880 --- [main] org.reflections.Reflections              : Reflections took 35 ms to scan 1 urls, producing 1 keys and 5 values 
+15-55-51-773  INFO 17880 --- [main] org.reflections.Reflections              : Reflections took 25 ms to scan 1 urls, producing 1 keys and 7 values 
+15-55-51-808  INFO 17880 --- [main] org.reflections.Reflections              : Reflections took 30 ms to scan 1 urls, producing 2 keys and 8 values 
+15-55-51-815  WARN 17880 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15-55-51-817  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] RpcClient init label, labels = {module=naming, source=sdk}
+15-55-51-822  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15-55-51-822  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15-55-51-823  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15-55-51-826  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Try to connect to server on start up, server: {serverIp = '192.168.10.101', server main port = 8848}
+15-55-59-439 ERROR 17880 --- [main] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.10.101 ,port 9848 is available , error ={}
 
-com.hmall.common.exception.BadRequestException: 商品不存在
-	at com.heima.trade.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:58) ~[classes/:na]
-	at com.heima.trade.service.impl.OrderServiceImpl$$FastClassBySpringCGLIB$$9e728d77.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.heima.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$29c3dc0e.createOrder(<generated>) ~[classes/:na]
-	at com.heima.trade.controller.OrderController.createOrder(OrderController.java:31) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 46 milliseconds, 233600 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@96dfcbb[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@117069f2, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@77ebc9e6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2b82018}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:390) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.start(NamingGrpcClientProxy.java:96) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.<init>(NamingGrpcClientProxy.java:89) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.<init>(NamingClientProxyDelegate.java:76) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:95) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81) ~[nacos-client-2.0.4.jar:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:59) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:99) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.buildNamingService(NacosServiceManager.java:90) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.getNamingService(NacosServiceManager.java:46) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.start(NacosWatch.java:130) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.27.jar:5.3.27]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.heima.trade.TradeApplication.main(TradeApplication.java:14) ~[classes/:na]
 
+15-55-59-447  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Try to connect to server on start up, server: {serverIp = '192.168.10.101', server main port = 8848}
+15-56-02-461 ERROR 17880 --- [main] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.10.101 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 10 milliseconds, 153800 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@4c614d8c[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@117069f2, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@77ebc9e6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2b82018}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:390) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.start(NamingGrpcClientProxy.java:96) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.<init>(NamingGrpcClientProxy.java:89) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.<init>(NamingClientProxyDelegate.java:76) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:95) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81) ~[nacos-client-2.0.4.jar:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:59) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:99) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.buildNamingService(NacosServiceManager.java:90) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.getNamingService(NacosServiceManager.java:46) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.start(NacosWatch.java:130) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.27.jar:5.3.27]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.heima.trade.TradeApplication.main(TradeApplication.java:14) ~[classes/:na]
+
+15-56-02-463  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Try to connect to server on start up, server: {serverIp = '192.168.10.101', server main port = 8848}
+15-56-04-049  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Success to connect to server [192.168.10.101:8848] on start up, connectionId = 1742716534839_192.168.10.1_58840
+15-56-04-051  INFO 17880 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Notify connected event to listeners.
+15-56-04-052  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15-56-04-053  INFO 17880 --- [main] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$973/0x00000008006ec840
+15-56-04-320  INFO 17880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+15-56-04-383  INFO 17880 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 172.17.0.1:8084 register finished
+15-56-04-800  INFO 17880 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Receive server push request, request = NotifySubscriberRequest, requestId = 1
+15-56-04-806  INFO 17880 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [f8d5f254-7905-4be7-8a27-48f09f26225a] Ack server push request, request = NotifySubscriberRequest, requestId = 1
+15-56-08-235  INFO 17880 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15-56-08-242  INFO 17880 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15-56-08-282  INFO 17880 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15-56-08-480  INFO 17880 --- [main] com.heima.trade.TradeApplication         : Started TradeApplication in 49.158 seconds (JVM running for 54.766)
