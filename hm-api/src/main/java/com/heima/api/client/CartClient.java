@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Collection;
 import java.util.List;
 
-@FeignClient("cart-service")
+@FeignClient(value = "cart-service")
 public interface CartClient {
     @DeleteMapping("/carts")
-    public void deleteCartItemByIds(@RequestParam("ids") Collection<Long> ids);
+    void deleteCartItemByIds(@RequestParam("ids") Collection<Long> ids);
 }

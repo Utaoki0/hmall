@@ -27,6 +27,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         //1.获取请求头
         ServerHttpRequest request = exchange.getRequest();
+        
         //2.判断是否需要拦截
         if (isExclude(request.getPath().toString()))
             return chain.filter(exchange);//不需要拦截，直接放行

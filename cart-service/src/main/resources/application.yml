@@ -1,8 +1,10 @@
 server:
   port: 8082
 
-feign: # 开启连接池
-  okhttp:
+feign:
+  sentinel:
+    enabled: true
+  okhttp: # 开启连接池
     enabled: true
 
 hm:
@@ -11,3 +13,10 @@ hm:
   swagger:
     title: "黑马商城购物车服务"
     package: "com.heima.cart.controller"
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 开启请求方式前缀

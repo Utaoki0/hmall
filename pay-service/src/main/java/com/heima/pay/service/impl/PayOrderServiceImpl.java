@@ -16,6 +16,8 @@ import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.UserContext;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,6 +47,8 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
         return payOrder.getId().toString();
     }
 
+    private final RabbitTemplate rabbitTemplate;
+
     @Override
     @Transactional
     public void tryPayOrderByBalance(PayOrderFormDTO payOrderFormDTO) {
@@ -67,7 +71,13 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
 //        order.setId(po.getBizOrderNo());
 //        order.setStatus(2);
 //        order.setPayTime(LocalDateTime.now());
-        orderService.markOrderPaySuccess(po.getBizOrderNo());
+//        orderService.markOrderPaySuccess(po.getBizOrderNo());
+        try {//不要对原业务造成影响
+            rabbitTemplate.convertAndSend("pay.direct", "pay.success", po.getBizOrderNo());
+        } catch (AmqpException e) {
+            System.out.println("发送消息失败");
+        }
+
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

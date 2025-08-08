@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 //@EnableFeignClients(basePackages = "com.heima.api.client")
 @EnableFeignClients(clients = {ItemClient.class})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.heima.api"})
 @MapperScan("com.heima.cart.mapper")
 public class CartApplication {
     public static void main(String[] args) {
