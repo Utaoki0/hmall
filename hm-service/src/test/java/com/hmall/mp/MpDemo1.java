@@ -1,15 +1,17 @@
 package com.hmall.mp;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.extension.toolkit.Db;
+import com.hmall.common.utils.BeanUtils;
+import com.hmall.domain.po.Address;
 import com.hmall.domain.po.Item;
 import com.hmall.domain.po.User;
 import com.hmall.mapper.UserMapper;
 import com.hmall.service.IItemService;
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -49,8 +51,37 @@ public class MpDemo1 {
                 .setSql("balance=balance-200")
                 .in("id", 1, 2, 3, 4);
         userMapper.update(null, updateWrapper2);
-
-
     }
+
+    @Test
+    public void LambdaQueryWrapper() {
+        //new LambdaQueryWrapper<>()
+        LambdaQueryWrapper<User> o = new QueryWrapper<User>().lambda()
+                .gt(User::getBalance, 1)
+                .like(User::getUsername, "o");
+        userMapper.selectList(o);
+    }
+
+    @Test
+    public void LambdaQueryWrapper2() {
+        String name = null;
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+        wrapper.like(name != null, User::getUsername, name);
+        userMapper.selectList(wrapper);
+    }
+
+    @Test
+    public void LambdaQueryWrapper3() {
+        //mp的批量新增，基于预编译的批处理，性能较好
+        itemService.saveBatch(List.of(new Item(), new Item()));
+    }
+    @Test
+    public void testStaticTool() {
+        List<Address> list = Db.lambdaQuery(Address.class).list();
+        list.forEach(System.out::println);
+    }
+
 }
+
+
 

@@ -1,4 +1,6 @@
 package com.hmall.mapper;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 import com.hmall.domain.po.Address;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -12,5 +14,4 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2023-05-05
  */
 public interface AddressMapper extends BaseMapper<Address> {
-
 }
