@@ -1,0 +1,66 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://${hm.db.host}:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ${hm.db.pw}
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.10.101:8848
+
+mybatis-plus:
+  #  type-aliases-package: com.hmall.domain.po # 别名扫描包，xml中不需要配置全类名
+  #  mapper-locations: classpath*:/mapper/**/*.xml # 默认值
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+    #    map-underscore-to-camel-case: true #开启驼峰映射 默认true
+    cache-enabled: true #开启二级缓存 默认false
+  global-config:
+    db-config:
+      #      id-type: assign_id #默认
+      update-strategy: not_null # 更新策略，只更新非空字段
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp功能
+
+logging:
+  level:
+    com.hmall: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+  file:
+    path: "logs/${spring.application.name}"
+knife4j:
+  enable: true
+  openapi:
+    title:
+    description: ""
+    email: zhanghuyi@itcast.cn
+    concat: 虎哥
+    url: https://www.itcast.cn
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.hmall.user.controller
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi
